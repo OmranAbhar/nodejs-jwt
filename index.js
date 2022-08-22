@@ -14,8 +14,6 @@ app.post('/login',(req,res)=>{
 });
 
 app.get('/logout',authenticateToken,(req,res)=>{
-	// jwt.out(req.token);
-	jwt.sign({expiresIn:'0s'});
 	res.sendStatus(204);
 });
 
